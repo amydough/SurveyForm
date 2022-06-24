@@ -10,15 +10,66 @@
 </head>
 
 <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Tell us about your experience</p>
+    <main>
+        <div class="container">
+            <section>
+                <h1 id="title">Computer Service Request Form</h1>
+                <p id="description">How can we help you?</p>
+            </section>
+            <section>
+                <form id="survey-form">
+                    <fieldset>
+                        <label id="name-label">Name: <input id="name" type="text" placeholder="Name" required /></label>
+                        <label id="email-label">Email: <input id="email" type="email" placeholder="Email"
+                                required /></label>
+                        <label id="number-label">Number of Computers: <input id="number" type="number" min="1" max="10"
+                                placeholder="#" required /></label>
+                    </fieldset>
+                    <fieldset>
+                        <p>Check what type of computer needs service: (check all that apply)</p>
+                        <label><input type="checkbox" name="computerType" value="windows" class="inline"> Windows
+                            Desktop</label>
+                        <label><input type="checkbox" name="computerType" value="mac" class="inline"> Mac
+                            Computer</label>
+                        <label><input type="checkbox" name="computerType" value="laptop" class="inline"> Laptop</label>
+                        <label><input type="checkbox" name="computerType" value="macbook" class="inline">
+                            Macbook</label>
+                        <label><input type="checkbox" name="computerType" value="tablet" class="inline"> Tablet</label>
+                        <label><input type="checkbox" name="computerType" value="iphone" class="inline"> iPhone</label>
+                        <label><input type="checkbox" name="computerType" value="android" class="inline"> Android
+                            Phone</label>
+                        <label><input type="checkbox" name="computerType" value="other" class="inline"> Other (add
+                            details in comment
+                            box)</label>
+                    </fieldset>
 
-    <form id="survey-form">
-        <label id="name-label">Name: <input id="name" type="text" placeholder="Name" required /></label>
-        <label id="email-label">Email: <input id="email" type="email" placeholder="Email" required /></label>
-        <label id="number-label">Number: <input id="number" type="number" min="1" max="5" placeholder="Number"
-                required /></label>
-    </form>
+                    <fieldset>
+                        <p>What service will you require:</p>
+                        <label>
+                            <select id="dropdown">
+                                <option>Troubleshoot/Maintenance</option>
+                                <option>Hardware Upgrade</option>
+                                <option>Software Installation</option>
+                                <option>Software Updates</option>
+                            </select>
+                        </label>
+
+                        <p>Will you be dropping off the computer or require a home visit?</p>
+                        <label><input type="radio" name="home-away" value="dropOff" class="inline" checked> Drop
+                            Off</label>
+                        <label><input type="radio" name="home-away" value="homeVisit" class="inline"> Home Visit</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <p>Any additional comments:</p>
+                        <textarea id="comments" name="comment" placeholder="Add your comments here"></textarea>
+                    </fieldset>
+                    <input id="submit" type="submit" value="Send Request">
+
+                </form>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>

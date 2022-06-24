@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(23, 52, 102);
+    font-style: sans-serif;
+    font-size: large;
+}
+
+.container {
+    background-color: rgb(54, 127, 255);
+    width: 60%;
+    max-width: 800px;
+    min-width: 530px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+label {
+    display: block;
+}
+
+p {
+    padding-top: 1em;
+}
+
+#name-label,
+#email-label,
+#number-label {
+    padding-top: 1em;
+}
+
+input {
+    height: 20px;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+select {
+    padding: 0.5em 0;
+    font-size: 1rem;
+}
+
+fieldset {
+    border: 0;
+}
+
+textarea {
+    height: 200px;
+    width: 300px;
+    font-size: 1rem;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    min-height: 2em;
+    background-color: #A5D5FE;
+    border: 1px, solid, #0a0a23;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #839baf;
+    border-color: white;
+    min-width: 300px;
+}
